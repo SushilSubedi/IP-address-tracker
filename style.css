@@ -46,7 +46,7 @@ body {
 
 .ip-table {
     background: white;
-    /* z-index: 1; */
+    z-index: 999;
     position: absolute;
     height: 90px;
     padding: 2%;
@@ -94,6 +94,7 @@ body {
     color:hsl(0, 0%, 17%);
 }
 
+#mapid { height: 350px; }
 
 .attribution { font-size: 11px; text-align: center; }
 /* .attribution a { color: hsl(228, */
