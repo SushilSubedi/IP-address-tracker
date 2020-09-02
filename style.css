@@ -98,3 +98,57 @@ body {
 
 .attribution { font-size: 11px; text-align: center; }
 /* .attribution a { color: hsl(228, */
+@media screen and (max-width: 375px) {
+    .input {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px; 
+        padding: 15px 0 0 0;
+    }
+    .input input {
+        height: 50px;
+        width: 212px;
+        padding-left: 16px;
+        border-radius: 14px 0 0 14px;
+        border: white;
+        font-size: 13px;
+        font-weight: 400;
+        padding-right: 2px;
+    }
+
+    .ip-table {
+        background: white;
+        z-index: 999;
+        position: absolute;
+        height: 38%;
+        padding: 2%;
+        top: 23%;
+        border-radius: 14px;
+        width: 80%;
+        left: 8%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .ip-table .cell :first-child {
+        text-align: center;
+        font-weight: 700;
+        font-size: 10px;
+        letter-spacing: 2px;
+        color: hsl(0, 0%, 59%);
+    }
+    
+    .ip-table .cell :last-child {
+        padding: 5%;
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        color:hsl(0, 0%, 17%);
+    }
+    .cell {
+        border: none;
+        padding:1%;
+    }
+} 
