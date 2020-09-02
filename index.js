@@ -38,24 +38,17 @@ button.addEventListener("click", () => {
 
 
   function getData() {
+    
+    var requestOptions = {
+      method: 'GET',
 
-// publicIp = httpGet()
-const api_url = `https://geo.ipify.org/api/v1?apiKey=&ipAddress=${input.value}`;
-const api = JSON.stringify(api_url);
-const ip = `${input.value}`
-console.log(ip)
-const apikey = 'at_iwdBQ5HY260IAeybxRiWsbiYisIbI'
-fetch('https://geo.ipify.org/api/v1',{
-    method:"POST",
-    body: JSON.stringify({apiKey: apikey, ip:ip}),
-    mode:"no-cors",
-     headers: {
-                Accept: 'application/json',
-                "Content-Type": "application/json",
-                // "Content-Type": "application/x-www-form-urlencoded",
-            },
-})
-.then(response => response.json().then(r => console.log(r)));
+      redirect: 'follow'
+    };
+    
+    fetch("https://geo.ipify.org/api/v1?apiKey=at_iwdBQ5HY260IAeybxRiWsbiYisIbI&ipAddress=192.168.215.12", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
 
 }
 
