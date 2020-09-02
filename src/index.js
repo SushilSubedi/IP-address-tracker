@@ -58,7 +58,7 @@ button.addEventListener("click", () => {
             isp.innerText = data.isp
             ipAddress.innerText = data.ip
             Location.innerText = `${data.location.city},${data.location.region}, ${data.location.postalCode}`
-            timeZone.innerText = `UTC-${data.location.timezone}`
+            timeZone.innerText = `UTC${data.location.timezone}`
               mymap.setView([data.location.lat,data.location.lng])
               marker.setLatLng([data.location.lat,data.location.lng])
         })
