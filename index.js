@@ -1,5 +1,5 @@
 //Making title and map
-const mymap = L.map('mapid').setView([28.3949, 84.1240], 7);
+const mymap = L.map('mapid').setView([28.3949, 84.1240], 6);
 const  myIcon = L.icon({
     iconUrl: './images/icon-location.svg',
     iconSize: [28, 34],
@@ -45,7 +45,7 @@ button.addEventListener("click", () => {
     var requestOptions = {
       method: 'GET',
       redirect: 'follow'
-      
+
     };
 
     const re = /^(([1-9]?\d|1\d\d|2[0-5][0-5]|2[0-4]\d)\.){3}([1-9]?\d|1\d\d|2[0-5][0-5]|2[0-4]\d)$/;
