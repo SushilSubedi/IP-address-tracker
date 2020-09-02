@@ -12,6 +12,7 @@
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
   crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <title>Frontend Mentor | IP Address Tracker</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,8 +25,8 @@
       <h1>IP Address Tracker</h1>
     </div>
     <div class="input">
-      <input type="text" placeholder="Search for any IP address or domain"/>
-      <div class="img">
+      <input type="text" id ="input" placeholder="Search for any IP address or domain"/>
+      <div class="img" id="button">
         <img src= "./images/icon-arrow.svg" alt="search icon"/>
       </div>
     </div>

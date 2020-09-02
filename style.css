@@ -50,10 +50,10 @@ body {
     position: absolute;
     height: 90px;
     padding: 2%;
-    top: 30%;
+    top: 28%;
     border-radius: 14px;
-    width: 70%;
-    left: 15%;
+    width: 64%;
+    left: 16%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -94,7 +94,7 @@ body {
     color:hsl(0, 0%, 17%);
 }
 
-#mapid { height: 350px; }
+#mapid { height: 365px; }
 
 .attribution { font-size: 11px; text-align: center; }
 /* .attribution a { color: hsl(228, */
