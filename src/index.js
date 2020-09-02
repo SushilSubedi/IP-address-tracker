@@ -61,6 +61,7 @@ button.addEventListener("click", () => {
             timeZone.innerText = `UTC${data.location.timezone}`
               mymap.setView([data.location.lat,data.location.lng])
               marker.setLatLng([data.location.lat,data.location.lng])
+              input.value = null;
         })
         .catch(error => console.log('error', error));
   
