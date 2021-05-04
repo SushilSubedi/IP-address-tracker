@@ -1,5 +1,5 @@
 //Making title and map
-const mymap = L.map('mapid').setView([28.3949, 84.1240], 14);
+const mymap = L.map('mapid').setView([37.40599, 84.1240], 14);
 const  myIcon = L.icon({
     iconUrl: './images/icon-location.svg',
     iconSize: [28, 34],
